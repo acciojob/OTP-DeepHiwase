@@ -1,18 +1,44 @@
-/*  your css code here. If applicable */
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-	text-align: center;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.code-container {
-	text-align: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-input {
-	text-align: center;
-	
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 10px;
+  color: grey;
 }
 
 .code {
-	width: 40px;
-	height: 40px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+
+  &:invalid {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: red;
+  }
 }
