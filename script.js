@@ -10,11 +10,16 @@ for (let otpInput of otpInputs) {
   otpInput.addEventListener("keyup", (e) => {
     if (e.key === "Backspace") {
       // otpInput.textContent = "";
-      while (otpInput.previousElementSibling && otpInput.previousElementSibling.textContent === "") {
+      // while (otpInput.previousElementSibling && otpInput.previousElementSibling.textContent === "") {
         const prevElement = otpInput.previousElementSibling;
         prevElement.focus();
-        console.log("1");
-      }
+        // console.log("1");
+      
+      // while (otpInput.previousElementSibling && otpInput.previousElementSibling.textContent === "") {
+      //   const prevElement = otpInput.previousElementSibling;
+      //   prevElement.focus();
+      //   console.log("1");
+      // }
       return;
     }
     if (e.key >= 0 && e.key <= 9) {
